@@ -1,1 +1,75 @@
-First time making index html files directly from github
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="./js/script.js" defer></script>
+    <script type="text/javascript" src="./js/theme.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/x-icon" href="./images/library.ico" />
+    <title>Library</title>
+  </head>
+
+  <body class="container">
+    <main>
+        <nav>
+          <h1>Odin's Library</h1>
+          <ul>
+            <li>Theme:</li>
+            <li><a href="#" data-theme-switcher ="light">Light</a></li>
+            <li><a href="#" data-theme-switcher ="dark">Dark</a></li>
+          </ul>
+        </nav>
+        <p><a href="https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/library" target='_blank'>
+        The Odin Project's </a>first deep dive into objects</p>
+      <form onsubmit="return false">
+        <div class="grid">
+          <input id="name" type="text" placeholder="Book's Name" required />
+          <input id="author" type="text" placeholder="Author's Name" required />
+          <input
+            id="pages"
+            type="number"
+            placeholder="# of Pages"
+            min="1"
+            required
+          />
+          <select id="status">
+            <option value="Read">Read</option>
+            <option value="Not Read">Not read</option>
+          </select>
+          <input type="submit" value="submit"></input>
+        </div>
+      </form>
+
+      <section id="tables">
+        <figure>
+          <table role="grid" >
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Author</th>
+                <th scope="col">Pages</th>
+                <th scope="col">Status</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+             
+            </tbody>
+          </table>
+        </figure>
+      </section>
+      <footer>
+        Collaborators:  <a href="https://github.com/lucastkacz/library" target='_blank'>Lucas Tkacz</a> and <a href="https://github.com/Peperayox/Library" target='_blank'>Tomas Samitier</a>
+        <p>Source code: <a href="https://github.com/Peperayox/Library" target='_blank'><img id="footer-logo" src="./images/gitHubLogo.png" /></a></p>
+      </footer>
+    </main>
+    
+  </body>
+</html>
