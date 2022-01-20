@@ -1,3 +1,5 @@
+/* Thanks to Pico CSS!!! go to html to see the link used to import Pico CSS */
+
 footer {
   text-align: center;
 }
@@ -11,3 +13,13 @@ footer {
   transform: rotate(720deg) scale(1.3);
 }
 /* CSS thanks to Pico CSS ( look at the HTML style link) */
+.delete {
+  background-color: rgb(201, 55, 55);
+}
+.Read {
+  background-color: chartreuse;
+  text-align: end;
+}
+.Unread {
+  background-color: crimson;
+}
